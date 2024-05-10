@@ -5,10 +5,10 @@ that takes no arguments. """
 
 import asyncio
 import random
-from typing import List, Generator
+from typing import Generator
 
 
-async def async_generator():
+async def async_generator() -> Generator[float, None, None]:
     """The coroutine Yields 10 random numbers between 0 and 10,
     with a 1-second delay between each yield."""
     for _ in range(10):
