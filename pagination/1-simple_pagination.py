@@ -46,4 +46,3 @@ class Server:
             return mydataset[indexes[0]:indexes[1]]
 
         return []
-    
