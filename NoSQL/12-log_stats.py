@@ -6,13 +6,13 @@ from pymongo import MongoClient
 if __name__ == "__main__":
     client = MongoClient('mongodb://127.0.0.1:27017')
 
-    db_name = 'longs'
+    db_name = 'logs'
     nginx_collection = 'nginx'
 
     collection = client[db_name][nginx_collection]
 
-    long_count = collection.count_documents({})
-    print(f"{long_count} longs")
+    log_count = collection.count_documents({})
+    print(f"{log_count} logs")
 
     methods = ["GET", "POST", "PUT", "PATCH", "DELETE"]
     print('Methods:')
