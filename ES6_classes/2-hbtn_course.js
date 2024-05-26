@@ -16,11 +16,11 @@ class HolbertonCourse {
       throw new TypeError('Name must be a string');
     }
   }
-  
+
   get length() {
     return this._length;
   }
-  
+
   set length(length) {
     if (typeof length === 'number') {
       this._length = length;
@@ -28,11 +28,11 @@ class HolbertonCourse {
       throw new TypeError('Length must be a number');
     }
   }
-  
+
   get students() {
     return this._students;
   }
-  
+
   set students(students) {
     if (
       Array.isArray(students)
@@ -44,5 +44,5 @@ class HolbertonCourse {
     }
   }
 }
-  
+
 export default HolbertonCourse;
