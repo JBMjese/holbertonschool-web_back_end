@@ -6,7 +6,7 @@ class Currency {
 
   get code() {
     return this._code;
-  }
+  } push
 
   set code(code) {
     if (typeof code === 'string') this._code = code;
